@@ -1,0 +1,34 @@
+{
+  "mkv_file": null,
+  "output": null,
+  "template": "default",
+  "custom_template": null,
+  "recognition": {
+    "strategy": "start",
+    "offset": 5.0,
+    "percentage": 0.5,
+    "duration": 3
+  },
+  "tools": {
+    "ffmpeg": null,
+    "mkvextract": null,
+    "mkvpropedit": null
+  },
+  "options": {
+    "no_backup": false,
+    "skip_check": false
+  },
+  "_comments": {
+    "mkv_file": "MKV视频文件路径（也可通过命令行指定）",
+    "output": "输出文件路径，null表示覆盖原文件",
+    "template": "预设模板: default, with_trans, full, simple, artist_first, with_id, detailed, japanese, minimal",
+    "custom_template": "自定义模板字符串，如 '{name} by {artists}'，设置后template参数无效",
+    "recognition.strategy": "采样策略: start(开始), middle(中间), end(结尾), custom(自定义百分比)",
+    "recognition.offset": "START策略的延迟秒数",
+    "recognition.percentage": "CUSTOM策略的位置百分比(0.0-1.0)",
+    "recognition.duration": "采样时长（秒），建议3-5秒",
+    "tools": "工具路径，null表示自动检测",
+    "options.no_backup": "是否禁用自动备份",
+    "options.skip_check": "是否跳过工具检查"
+  }
+}

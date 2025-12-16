@@ -1,0 +1,28 @@
+{
+  "mkv_file": "c:/path/to/video.mkv",
+  "output": null,
+  "template": "simple",
+  "custom_template": null,
+  "recognition": {
+    "strategy": "middle",
+    "offset": 5.0,
+    "percentage": 0.5,
+    "duration": 3
+  },
+  "tools": {
+    "ffmpeg": null,
+    "mkvextract": null,
+    "mkvpropedit": null
+  },
+  "options": {
+    "no_backup": false,
+    "skip_check": false
+  },
+  "_comments": {
+    "说明": "这是一个实用配置文件示例",
+    "使用方法": "python auto_rename_mkv_chapters.py --config config.example2.json",
+    "mkv_file": "可以在配置文件中指定视频路径，也可以通过命令行覆盖",
+    "template": "使用simple模板只显示歌名",
+    "strategy": "使用middle策略从章节中间采样，提高识别准确度"
+  }
+}

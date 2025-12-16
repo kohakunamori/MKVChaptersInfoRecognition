@@ -1,0 +1,18 @@
+{
+  "template": "default",
+  "custom_template": null,
+  "recognition": {
+    "strategy": "start",
+    "offset": 5.0,
+    "percentage": 0.5,
+    "duration": 3
+  },
+  "comments": {
+    "template": "可选值: default, with_trans, full, simple, artist_first, with_id, detailed, japanese, minimal, 或自定义模板字符串",
+    "custom_template": "如果设置此项，将使用自定义模板字符串，例如: '{name} by {artists}'",
+    "strategy": "可选值: start(开始), middle(中间), end(结尾), custom(自定义百分比)",
+    "offset": "从章节开始后延迟的秒数（仅对start策略有效）",
+    "percentage": "章节位置百分比，0.0-1.0（仅对custom策略有效）",
+    "duration": "采样时长（秒），建议3-5秒"
+  }
+}
